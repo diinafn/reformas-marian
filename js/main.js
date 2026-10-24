@@ -36,6 +36,9 @@ filterBtns.forEach((btn) => {
     });
   });
 });
+// trabajos.html#banos abre la galería ya filtrada
+const hashBtn = location.hash && document.querySelector(`.filter-btn[data-filter="${location.hash.slice(1)}"]`);
+if (hashBtn) hashBtn.click();
 
 // Visor de fotos a pantalla completa
 const lbLinks = document.querySelectorAll("a.lb");

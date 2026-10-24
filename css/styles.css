@@ -336,3 +336,10 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
   .mobile-call .wa { background: var(--whatsapp); }
   .footer { padding-bottom: 80px; }
 }
+
+/* "Trabajos realizados" dentro de cada servicio: 2 columnas también en el móvil */
+@media (max-width: 760px) {
+  .gallery.gallery-work { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .gallery.gallery-work figure.video { grid-column: 1 / -1; }
+  .gallery.gallery-work figcaption { font-size: 0.8rem; padding: 8px 10px; }
+}
