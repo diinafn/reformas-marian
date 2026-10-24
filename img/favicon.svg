@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#e8731a"/><text x="32" y="45" text-anchor="middle" font-family="Arial" font-weight="700" font-size="38" fill="#fff">M</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Reformas Marian">
+  <rect width="64" height="64" rx="10" fill="#14213d"/>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M11 30 L32 12 L53 30" stroke="#c9a04f" stroke-width="4.5"/>
+    <path d="M44.5 22 V14.5" stroke="#c9a04f" stroke-width="4"/>
+    <path d="M20 51 V33 L32 43 L44 33 V51" stroke="#ffffff" stroke-width="4.5"/>
+  </g>
+</svg>
