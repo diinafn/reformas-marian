@@ -343,3 +343,10 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
   .gallery.gallery-work figure.video { grid-column: 1 / -1; }
   .gallery.gallery-work figcaption { font-size: 0.8rem; padding: 8px 10px; }
 }
+
+/* Zonas y pie de página */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.chip { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--dark); font-weight: 600; font-size: 0.93rem; }
+.chip:hover { border-color: var(--primary); color: var(--primary); }
+.footer-zones { margin-top: 32px; font-size: 0.88rem; line-height: 1.9; }
+.footer-zones strong { color: #fff; }
