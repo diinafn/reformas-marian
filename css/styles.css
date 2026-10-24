@@ -187,6 +187,7 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
 }
 
 .gallery figure[hidden] { display: none; }
+.content .gallery-2 { grid-template-columns: repeat(2, 1fr); margin: 8px 0 20px; }
 .gallery a.lb { display: block; cursor: zoom-in; }
 .gallery a.lb img { transition: transform 0.3s; }
 .gallery a.lb:hover img { transform: scale(1.04); }
