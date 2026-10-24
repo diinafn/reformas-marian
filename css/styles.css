@@ -187,6 +187,9 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
 }
 
 .gallery figure[hidden] { display: none; }
+.gallery figure.video { background: var(--dark); display: flex; flex-direction: column; }
+.gallery figure.video video { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #000; display: block; }
+.gallery figure.video figcaption { position: static; background: var(--dark); }
 .content .gallery-2 { grid-template-columns: repeat(2, 1fr); margin: 8px 0 20px; }
 .gallery a.lb { display: block; cursor: zoom-in; }
 .gallery a.lb img { transition: transform 0.3s; }
@@ -318,6 +321,8 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
   .nav a { padding: 12px 0; border-bottom: 1px solid var(--border); }
   .nav .btn { margin-top: 12px; justify-content: center; border: 0; }
   .grid-3, .grid-4, .gallery, .footer-grid { grid-template-columns: 1fr; }
+  .filters { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 6px; margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; }
+  .filter-btn { white-space: nowrap; flex-shrink: 0; }
   .hero { padding: 72px 0 80px; }
   .contact-box { padding: 28px 20px; }
   .float-wa { bottom: 84px; }
