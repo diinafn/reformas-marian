@@ -102,7 +102,7 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
   position: relative;
   color: #fff;
   background: linear-gradient(100deg, rgba(31, 41, 51, 0.92) 0%, rgba(31, 41, 51, 0.65) 60%, rgba(31, 41, 51, 0.35) 100%),
-    url("../img/hero.svg") center / cover no-repeat;
+    url("../img/obras/solado-porcelanico-local-zaragoza-2.jpg") center / cover no-repeat;
   padding: 110px 0 120px;
 }
 .hero h1 { color: #fff; max-width: 720px; }
@@ -185,6 +185,42 @@ h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
   color: #fff; font-weight: 600; font-size: 0.95rem;
 }
+
+.gallery figure[hidden] { display: none; }
+.gallery a.lb { display: block; cursor: zoom-in; }
+.gallery a.lb img { transition: transform 0.3s; }
+.gallery a.lb:hover img { transform: scale(1.04); }
+
+/* Filters */
+.filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 32px; }
+.filter-btn {
+  padding: 9px 18px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: #fff; color: var(--dark);
+  font: inherit; font-size: 0.92rem; font-weight: 600;
+}
+.filter-btn:hover { border-color: var(--primary); color: var(--primary); }
+.filter-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(10, 14, 18, 0.94);
+  display: flex; align-items: center; justify-content: center;
+  padding: 56px 16px;
+}
+.lightbox[hidden] { display: none; }
+.lightbox figure { max-width: 1100px; max-height: 100%; text-align: center; }
+.lightbox img { max-width: 100%; max-height: calc(100vh - 140px); margin: 0 auto; border-radius: 6px; }
+.lightbox figcaption { color: #e4e7eb; margin-top: 12px; font-weight: 600; }
+.lightbox button {
+  position: absolute; background: rgba(255, 255, 255, 0.12); color: #fff;
+  border: 0; border-radius: 50%; width: 48px; height: 48px;
+  font-size: 2rem; line-height: 1; cursor: pointer;
+}
+.lightbox button:hover { background: rgba(255, 255, 255, 0.25); }
+.lb-close { top: 16px; right: 16px; }
+.lb-prev { left: 16px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 16px; top: 50%; transform: translateY(-50%); }
 
 /* Testimonials */
 .testimonial { padding: 28px; }
